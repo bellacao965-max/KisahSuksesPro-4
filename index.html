@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kisah Sukses — Mentor Lokal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <img src="assets/logo.png" class="logo" alt="Logo">
+    <div class="title">
+      <h1>Kisah Sukses</h1>
+      <p class="sub">Inspirasi harian & mentor lokal</p>
+    </div>
+  </div>
+</header>
+
+<main class="wrap main">
+  <section class="card">
+    <h2>Masukkan kisah atau teks</h2>
+    <textarea id="inputText" rows="6" placeholder="Tempel kisah di sini..."></textarea>
+    <div class="controls">
+      <label>Temperature:
+        <input id="temp" type="range" min="0" max="1" step="0.1" value="0.6">
+      </label>
+      <button id="goBtn" class="primary">Minta Ringkasan & Saran</button>
+    </div>
+    <div id="output" class="result" aria-live="polite"></div>
+  </section>
+
+  <section class="card small">
+    <h3>Contoh cepat</h3>
+    <ul id="samples">
+      <li><button class="sample">Saya memulai usaha dari bengkel kecil, pelan tapi konsisten.</button></li>
+      <li><button class="sample">Hobi saya menghasilkan produk unik yang banyak diminati.</button></li>
+      <li><button class="sample">Saya gagal dalam projek, tapi belajar dari feedback pelanggan.</button></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer"><div class="wrap"><small>© 2025 — Kisah Sukses Lokal</small></div></footer>
+
+<script src="ai.js"></script>
+</body>
+</html>
